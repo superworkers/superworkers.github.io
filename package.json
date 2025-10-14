@@ -1,0 +1,9 @@
+{
+  "name": "nothing-static",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "node build",
+    "dev": "node build --dev --watch",
+    "watch": "node build --watch"
+  }
+}

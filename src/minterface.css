@@ -1,0 +1,230 @@
+/* Colors */
+:root {
+  --color-darkest: rgba(0, 0, 17, 0.9); /* #000011e5 - 90% */
+  --color-darker: rgba(0, 0, 17, 0.7); /* #000011b2 - 70% */
+  --color-half: rgba(0, 0, 17, 0.5); /* #00001180 - 50% */
+  --color-light: rgba(0, 0, 17, 0.1); /* #0000111a - 10% */
+  --color-lighter: rgba(0, 0, 17, 0.05); /* #0000110d - 5% */
+  --color-lightest: rgb(255, 255, 255); /* #fff */
+}
+.ghost {
+  --color-darkest: rgba(255, 255, 255, 0.9); /* e5 - 90% */
+  --color-darker: rgba(255, 255, 255, 0.7); /* b2 - 70% */
+  --color-half: rgba(255, 255, 255, 0.5); /* 80 - 50% */
+  --color-light: rgba(255, 255, 255, 0.1); /* 1a - 10% */
+  --color-lighter: rgba(255, 255, 255, 0.05); /* 0d - 5% */
+  --color-lightest: rgb(0, 0, 17); /* #001 */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* copied from .ghost */
+    --color-darkest: rgba(255, 255, 255, 0.9);
+    --color-darker: rgba(255, 255, 255, 0.7);
+    --color-half: rgba(255, 255, 255, 0.5);
+    --color-light: rgba(255, 255, 255, 0.1);
+    --color-lighter: rgba(255, 255, 255, 0.05);
+    --color-lightest: rgb(0, 0, 17);
+  }
+
+  .ghost {
+    /* copied from :root */
+    --color-darkest: rgba(0, 0, 17, 0.9);
+    --color-darker: rgba(0, 0, 17, 0.7);
+    --color-half: rgba(0, 0, 17, 0.5);
+    --color-light: rgba(0, 0, 17, 0.1);
+    --color-lighter: rgba(0, 0, 17, 0.05);
+    --color-lightest: rgb(255, 255, 255);
+  }
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+/* Typography */
+body {
+  -webkit-font-smoothing: antialiased;
+  background: var(--color-lightest);
+  color: var(--color-darkest);
+  font:
+    500 1rem/1 'DM Sans',
+    system-ui,
+    -apple-system,
+    sans-serif;
+  letter-spacing: 0.01em;
+  text-rendering: geometricPrecision;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 1.5rem;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 1.25rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Components */
+
+/* Card */
+.card {
+  background: var(--color-lightest);
+  border: 1px solid var(--color-light);
+  border-radius: 0.5rem;
+}
+
+.card-header,
+.card-section,
+.card-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.5rem;
+}
+
+.card-section {
+  gap: 1rem;
+  padding-top: 0;
+}
+
+/* Button */
+.button {
+  align-items: center;
+  border: 1px solid var(--color-light);
+  border-radius: 0.375rem;
+  cursor: pointer;
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+}
+
+.button-primary {
+  background: var(--color-darkest);
+  border-color: var(--color-darkest);
+  color: var(--color-lightest);
+}
+
+.button-secondary {
+  background: var(--color-light);
+}
+
+.button-outline {
+  background: transparent;
+  border-color: var(--color-darkest);
+}
+
+/* Form */
+input,
+textarea {
+  background: var(--color-lightest);
+  border: 1px solid var(--color-light);
+  border-radius: 0.375rem;
+  color: var(--color-darkest);
+  font: inherit;
+  padding: 0.625rem 0.75rem;
+}
+
+input::placeholder {
+  color: var(--color-half);
+}
+
+/* Chat */
+.bubble {
+  background: var(--color-lighter);
+  border-radius: 0.375rem;
+  display: inline-flex;
+  padding: 0.625rem 0.75rem;
+}
+
+.bubble-right {
+  align-self: flex-end;
+  background: var(--color-darkest);
+  color: var(--color-lightest);
+}
+
+/* Divider */
+.line {
+  background: var(--color-lighter);
+  height: 1px;
+}
+
+/* User */
+.user-item {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.user-item img {
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+/* Icons */
+.icon {
+  font-family: 'Font Awesome 7 Pro', sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+
+.icon-small {
+  font-family: 'Font Awesome 7 Pro', sans-serif;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+
+.icon-solid {
+  font-family: 'Font Awesome 7 Pro', sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1.25rem;
+}
+
+/* Utilities */
+.fill {
+  flex: 1;
+}
+
+.row {
+  display: flex;
+  gap: 0.5rem;
+}
