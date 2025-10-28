@@ -2,13 +2,19 @@ const fs = require('fs')
 const path = require('path')
 const { execSync } = require('child_process')
 
-const getRepoName = () =>
-  execSync('git remote get-url origin', { encoding: 'utf8' }).split('/').pop().replace('.git', '').trim()
+const getRepoName = () => {
+  try {
+    return execSync('git remote get-url origin', { encoding: 'utf8' }).split('/').pop().replace('.git', '').trim()
+  } catch {
+    return null
+  }
+}
 
 const srcDir = 'src'
 const buildDir = 'build'
 const isDev = process.argv.includes('--dev')
-const basePath = isDev ? '/' : `/${getRepoName()}/`
+const repoName = getRepoName()
+const basePath = isDev || fs.existsSync('CNAME') ? '/' : `/${repoName}/`
 
 const build = () => {
   fs.rmSync(buildDir, { force: true, recursive: true })
@@ -18,6 +24,7 @@ const build = () => {
   const pages = JSON.parse(fs.readFileSync(path.join(srcDir, 'pages.json'), 'utf8'))
 
   const buildPage = (content, pageName, outputPath) => {
+    const indexDefaults = pages['index'] || {}
     const pageConfig = pages[pageName] || {}
     const styles = fs.existsSync(path.join(srcDir, `${pageName}.css`))
       ? `<link rel="stylesheet" href="${pageName}.css" />`
@@ -31,6 +38,7 @@ const build = () => {
       content,
       scripts,
       styles,
+      ...indexDefaults,
       ...pageConfig,
     }
 

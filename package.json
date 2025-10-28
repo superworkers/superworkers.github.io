@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "node build",
-    "dev": "node build --dev --watch",
+    "dev": "node dev",
     "watch": "node build --watch"
   }
 }

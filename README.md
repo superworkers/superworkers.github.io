@@ -52,3 +52,11 @@ src/
 - `name.html` becomes `name/index.html`
 - `app/page.html` becomes `app/index.html`
 - All non-HTML files copied as-is
+
+## TODO
+
+### minterface.css
+- [ ] Rework heading line-heights
+- [ ] Add app vs marketing heading sizes
+- [ ] Standardize button styles
+- [ ] Consolidate border-radius values (0.5rem, 0.375rem, 50%) into CSS variable
