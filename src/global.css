@@ -1,28 +1,48 @@
 body {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
   font-family: system-ui;
-  gap: 4rem;
-  height: 100vh;
-  justify-content: center;
   margin: 0;
 }
 
-img {
-  display: none;
-  height: 9rem;
-  pointer-events: none;
+header .layer-inset {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
 }
 
-.active {
-  display: block;
+.logo {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 0.8;
+  text-transform: uppercase;
+}
+
+footer .layer-inset {
+  overflow: hidden;
+}
+
+footer .logo {
+  color: var(--color-lighter);
+  font-size: clamp(4rem, 15vw, 10rem);
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.button {
+  white-space: nowrap;
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
+
 a:hover {
-  border-bottom: 1px solid currentColor;
+  text-decoration: underline;
 }

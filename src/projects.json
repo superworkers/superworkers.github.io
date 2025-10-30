@@ -1,0 +1,32 @@
+[
+  {
+    "image": "https://images.unsplash.com/photo-1761206669251-a5c1b4174e96?fit=crop&q=80&w=800&h=450",
+    "name": "Brandon",
+    "slug": "brandon"
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1677022725616-91e41d36db21?fit=crop&q=80&w=800&h=450",
+    "name": "Burke",
+    "slug": "burke"
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1503891450247-ee5f8ec46dc3?fit=crop&q=80&w=800&h=450",
+    "name": "Darrin",
+    "slug": "darrin"
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1760529700793-2f1ca0e96eab?fit=crop&q=80&w=800&h=450",
+    "name": "Jory",
+    "slug": "jory"
+  },
+  {
+    "name": "Mitt",
+    "slug": "mitt",
+    "video": "https://videos.pexels.com/video-files/31695123/13504136_1920_1080_30fps.mp4"
+  },
+  {
+    "color": "#dc143c",
+    "name": "Samantha",
+    "slug": "samantha"
+  }
+]

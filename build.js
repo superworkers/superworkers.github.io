@@ -23,35 +23,46 @@ const build = () => {
   const layout = fs.readFileSync(path.join(srcDir, 'layout.html'), 'utf8')
   const pages = JSON.parse(fs.readFileSync(path.join(srcDir, 'pages.json'), 'utf8'))
 
-  const buildPage = (content, pageName, outputPath) => {
-    const indexDefaults = pages['index'] || {}
-    const pageConfig = pages[pageName] || {}
-    const styles = fs.existsSync(path.join(srcDir, `${pageName}.css`))
-      ? `<link rel="stylesheet" href="${pageName}.css" />`
-      : ''
-    const scripts = fs.existsSync(path.join(srcDir, `${pageName}.js`))
-      ? `<script defer src="${pageName}.js"></script>`
-      : ''
+  const buildPage = (content, pageName, outputPath, pageDir, htmlFileName) => {
+    const pageBase = pageName === 'home' ? basePath : `${basePath}${pageName}/`
+    const cssPath = path.join(pageDir, `${htmlFileName}.css`)
+    const jsPath = path.join(pageDir, `${htmlFileName}.js`)
+    const styles = fs.existsSync(cssPath) ? `<link rel="stylesheet" href="${htmlFileName}.css" />` : ''
+    const scripts = fs.existsSync(jsPath) ? `<script defer src="${htmlFileName}.js"></script>` : ''
 
     const replacements = {
       base: basePath,
+      pageBase,
       content,
       scripts,
       styles,
-      ...indexDefaults,
-      ...pageConfig,
+      ...(pages['index'] || {}),
+      ...(pages[pageName] || {}),
     }
 
-    let html = layout
-    Object.keys(replacements).forEach(key => {
-      html = html.replace(new RegExp(`{${key}}`, 'g'), replacements[key])
-    })
+    let html = Object.keys(replacements).reduce(
+      (acc, key) => acc.replace(new RegExp(`{${key}}`, 'g'), replacements[key]),
+      layout,
+    )
 
     fs.writeFileSync(outputPath, html)
   }
 
+  const copyAsset = (dir, outputDir, fileName) => {
+    const srcPath = path.join(dir, fileName)
+    if (fs.existsSync(srcPath)) {
+      fs.copyFileSync(srcPath, path.join(outputDir, fileName))
+      console.log(`📄 ${path.relative(srcDir, srcPath)}`)
+    }
+  }
+
   const processDir = (dir, outputDir) => {
-    fs.readdirSync(dir, { withFileTypes: true }).forEach(entry => {
+    const entries = fs.readdirSync(dir, { withFileTypes: true })
+    const htmlFiles = entries
+      .filter(e => e.name.endsWith('.html') && e.name !== 'layout.html')
+      .map(e => e.name.replace('.html', ''))
+
+    entries.forEach(entry => {
       const srcPath = path.join(dir, entry.name)
       const relPath = path.relative(srcDir, srcPath)
 
@@ -61,22 +72,35 @@ const build = () => {
         const newOutputDir = path.join(outputDir, entry.name)
         fs.mkdirSync(newOutputDir, { recursive: true })
         processDir(srcPath, newOutputDir)
-      } else if (entry.name === 'page.html') {
-        const content = fs.readFileSync(srcPath, 'utf8')
-        const dirPath = path.relative(srcDir, dir)
-        const pageName = dirPath || 'index'
-        buildPage(content, pageName, path.join(outputDir, 'index.html'))
-        console.log(`✅ ${relPath} → ${path.relative(buildDir, outputDir)}/index.html`)
       } else if (entry.name.endsWith('.html')) {
-        const content = fs.readFileSync(srcPath, 'utf8')
-        const pageName = entry.name.replace('.html', '')
-        const pageDir = path.join(outputDir, pageName)
-        fs.mkdirSync(pageDir, { recursive: true })
-        buildPage(content, pageName, path.join(pageDir, 'index.html'))
-        console.log(`✅ ${relPath} → ${pageName}/index.html`)
+        const htmlFileName = entry.name.replace('.html', '')
+        const dirPath = path.relative(srcDir, dir)
+        const folderName = path.basename(dir)
+        const isHome = htmlFileName === 'home' && !dirPath
+        const matchesFolder = htmlFileName === folderName && folderName !== 'src'
+        const pageName = isHome
+          ? 'home'
+          : dirPath && !matchesFolder
+            ? `${dirPath}/${htmlFileName}`
+            : dirPath || htmlFileName
+        const targetDir = isHome || matchesFolder ? outputDir : path.join(outputDir, htmlFileName)
+
+        if (!isHome && !matchesFolder) fs.mkdirSync(targetDir, { recursive: true })
+        buildPage(fs.readFileSync(srcPath, 'utf8'), pageName, path.join(targetDir, 'index.html'), dir, htmlFileName)
+        console.log(
+          `✅ ${relPath} → ${
+            isHome || matchesFolder ? path.relative(buildDir, targetDir) + '/' : htmlFileName + '/'
+          }index.html`,
+        )
+        copyAsset(dir, targetDir, `${htmlFileName}.css`)
+        copyAsset(dir, targetDir, `${htmlFileName}.js`)
       } else {
-        fs.copyFileSync(srcPath, path.join(outputDir, entry.name))
-        console.log(`📄 ${relPath}`)
+        const shouldSkip = entry.name.match(/\.(css|js)$/) && htmlFiles.includes(entry.name.replace(/\.(css|js)$/, ''))
+
+        if (!shouldSkip) {
+          fs.copyFileSync(srcPath, path.join(outputDir, entry.name))
+          console.log(`📄 ${relPath}`)
+        }
       }
     })
   }

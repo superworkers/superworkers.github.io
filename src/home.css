@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=BioRhyme:wght@700&family=Fraunces:wght@700&family=Momo+Signature&family=Plus+Jakarta+Sans:wght@700&family=Rubik:wght@700&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Video */
+#video {
+  flex: 1;
+}
+
+#video .layer-inset {
+  /* aspect-ratio: 16/9; */
+  border-radius: 1rem;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+#video video {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+#cycle {
+  left: 50%;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.superwork {
+  background: var(--color-darkest);
+  display: none;
+  height: 9rem;
+  pointer-events: none;
+  width: 18rem;
+}
+
+.dev {
+  mask: url(assets/superwork.dev.svg) no-repeat center / contain;
+}
+
+.ing {
+  mask: url(assets/superwork.ing.svg) no-repeat center / contain;
+}
+
+.me {
+  mask: url(assets/superwork.me.svg) no-repeat center / contain;
+}
+
+.studio {
+  mask: url(assets/superwork.studio.svg) no-repeat center / contain;
+}
+
+.vc {
+  mask: url(assets/superwork.vc.svg) no-repeat center / contain;
+}
+
+.active {
+  display: block;
+}
+
+/* Projects */
+#projects .layer-inset {
+  align-items: stretch;
+}
+
+#projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.project-card {
+  align-items: center;
+  aspect-ratio: 16/9;
+  background: var(--color-lighter);
+  border-radius: 1rem;
+  color: var(--color-darkest);
+  display: flex;
+  flex: 1 1 100%;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .project-card {
+    flex: 1 1 calc(50% - 0.75rem);
+  }
+}
+
+.project-card img,
+.project-card video {
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+
+.project-card h3 {
+  font-size: 2rem;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.brandon h3 {
+  font-family: 'Plus Jakarta Sans', system-ui;
+  text-transform: uppercase;
+}
+
+.burke h3 {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.darrin h3 {
+  font-family: 'BioRhyme', serif;
+}
+
+.jory h3 {
+  font-family: 'Rubik', sans-serif;
+}
+
+.mitt h3 {
+  font-family: 'Fraunces', serif;
+}
+
+.samantha h3 {
+  font-family: 'Momo Signature', cursive;
+}

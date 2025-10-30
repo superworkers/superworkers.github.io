@@ -1,0 +1,131 @@
+/* Markdown */
+#markdown .layer-inset {
+  max-width: 48rem;
+}
+
+#markdown h1 {
+  color: var(--color-darkest);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+}
+
+#markdown p {
+  color: var(--color-darker);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* OS */
+#os .layer-inset {
+  align-items: center;
+  background: linear-gradient(to bottom, #fffbf0, #fdebd0);
+  border-radius: 1rem;
+  display: flex;
+  height: calc(100vh - var(--space-clamp) * 2);
+  justify-content: center;
+  max-width: unset;
+  padding: 2rem;
+}
+
+#desktop {
+  align-items: center;
+  aspect-ratio: 16/9;
+  background: #dc143c;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-clamp);
+  justify-content: center;
+  max-height: 100%;
+  max-width: 60rem;
+  padding: var(--space-clamp);
+  position: relative;
+  width: 100%;
+}
+
+.os-logo {
+  bottom: var(--space-clamp);
+  color: var(--color-darkest);
+  font-size: 3rem;
+  font-weight: 700;
+  left: var(--space-clamp);
+  position: absolute;
+}
+
+#begin {
+  background: var(--color-lighter);
+  border-radius: 1.25rem;
+  color: var(--color-darkest);
+}
+
+#begin:hover {
+  background: var(--color-light);
+}
+
+#helix {
+  display: none;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  transform: scale(2);
+}
+
+.helix {
+  color: var(--color-darkest);
+}
+
+.helix + .helix {
+  color: var(--color-light);
+  left: 0;
+  position: absolute;
+  transform: scaleY(-1);
+}
+
+.wave {
+  animation: moveTheWave 3000ms linear infinite;
+  stroke-dasharray: 0 16 101 16;
+}
+
+@keyframes moveTheWave {
+  0% {
+    stroke-dashoffset: 0;
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    stroke-dashoffset: -133;
+    transform: translate3d(-90px, 0, 0);
+  }
+}
+
+@keyframes scaleHelix {
+  from {
+    transform: scale(2);
+  }
+  to {
+    transform: scale(4);
+  }
+}
+
+#helix.scaling {
+  animation: scaleHelix 15s ease-out forwards;
+}
+
+#progress {
+  background: var(--color-light);
+  border-radius: 1rem;
+  display: none;
+  height: 0.5rem;
+  overflow: hidden;
+  position: relative;
+  width: 50%;
+}
+
+#progress-bar {
+  background: var(--color-darkest);
+  border-radius: 1rem;
+  height: 100%;
+  transition: width 0.5s ease;
+  width: 0%;
+}
