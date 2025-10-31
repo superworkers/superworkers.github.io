@@ -1,4 +1,4 @@
-const startRealtimeSession = async (samanthaVoice, mediaStream) => {
+const startRealtimeSession = async samanthaVoice => {
   const pc = new RTCPeerConnection()
 
   const audioElement = document.createElement('audio')
@@ -7,6 +7,7 @@ const startRealtimeSession = async (samanthaVoice, mediaStream) => {
   audioElement.setAttribute('playsinline', true)
   pc.ontrack = e => (audioElement.srcObject = e.streams[0])
 
+  const mediaStream = await navigator.mediaDevices.getUserMedia({ audio: true })
   pc.addTrack(mediaStream.getTracks()[0])
 
   const dc = pc.createDataChannel('oai-events')

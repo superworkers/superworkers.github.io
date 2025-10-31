@@ -39,40 +39,60 @@ const desktop = document.getElementById('desktop')
 const helix = document.getElementById('helix')
 const progress = document.getElementById('progress')
 const progressBar = document.getElementById('progress-bar')
+const resetBtn = document.getElementById('reset')
 
-beginBtn.onclick = async () => {
-  beginBtn.style.display = 'none'
-  helix.style.display = 'block'
-  progress.style.display = 'block'
+const installed = localStorage.getItem('samantha')
 
-  const samanthaVoice = Math.random() < 0.5 ? 'sage' : 'shimmer'
-  const osSteps = script.filter(line => line.speaker === 'os')
-  let completedSteps = 0
+resetBtn.onclick = () => {
+  localStorage.removeItem('samantha')
+  location.reload()
+}
 
-  for (const line of script) {
-    if (line.speaker === 'os') {
-      completedSteps++
-      progressBar.style.width = `${(completedSteps / osSteps.length) * 100}%`
-    }
+if (installed) {
+  desktop.style.display = 'none'
+  resetBtn.style.display = 'block'
+  window.addEventListener('load', () => {
+    const samanthaVoice = Math.random() < 0.5 ? 'sage' : 'shimmer'
+    startRealtimeSession(samanthaVoice)
+  })
+} else {
+  beginBtn.onclick = async () => {
+    beginBtn.style.display = 'none'
+    helix.style.display = 'block'
+    progress.style.display = 'block'
 
-    const voice = line.speaker === 'samantha' ? samanthaVoice : 'ash'
-    const audioUrl = await generateAudio(line.text, voice)
-    await playAudio(audioUrl)
+    const samanthaVoice = Math.random() < 0.5 ? 'sage' : 'shimmer'
+    const osSteps = script.filter(line => line.speaker === 'os')
+    let completedSteps = 0
 
-    if (line.waitForInput) {
-      await new Promise(resolve => setTimeout(resolve, 3000))
-    }
+    for (const line of script) {
+      if (line.speaker === 'os') {
+        completedSteps++
+        progressBar.style.width = `${(completedSteps / osSteps.length) * 100}%`
+      }
 
-    if (line.install) {
-      progress.style.display = 'none'
-      helix.classList.add('scaling')
-      await playAudio('os-install.m4a')
-      desktop.style.display = 'none'
-    }
+      if (line.speaker === 'samantha') {
+        localStorage.setItem('samantha', 'true')
+      }
 
-    if (line.realtime) {
-      const mediaStream = await navigator.mediaDevices.getUserMedia({ audio: true })
-      await startRealtimeSession(samanthaVoice, mediaStream)
+      const voice = line.speaker === 'samantha' ? samanthaVoice : 'ash'
+      const audioUrl = await generateAudio(line.text, voice)
+      await playAudio(audioUrl)
+
+      if (line.waitForInput) {
+        await new Promise(resolve => setTimeout(resolve, 3000))
+      }
+
+      if (line.install) {
+        progress.style.display = 'none'
+        helix.classList.add('scaling')
+        await playAudio('os-install.m4a')
+        desktop.style.display = 'none'
+      }
+
+      if (line.realtime) {
+        await startRealtimeSession(samanthaVoice)
+      }
     }
   }
 }

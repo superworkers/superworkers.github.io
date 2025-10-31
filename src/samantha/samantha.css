@@ -64,6 +64,10 @@
   background: var(--color-light);
 }
 
+#reset {
+  display: none;
+}
+
 #helix {
   display: none;
   margin: 0 auto;
