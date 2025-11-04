@@ -15,9 +15,24 @@
     "slug": "darrin"
   },
   {
+    "image": "https://images.unsplash.com/photo-1562522730-7c98d13c6690?fit=crop&q=80&w=800&h=450",
+    "name": "David",
+    "slug": "dave"
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1525104171570-308e54169ae1?fit=crop&q=80&w=800&h=450",
+    "name": "Jeremy",
+    "slug": "jeremy"
+  },
+  {
     "image": "https://images.unsplash.com/photo-1760529700793-2f1ca0e96eab?fit=crop&q=80&w=800&h=450",
     "name": "Jory",
     "slug": "jory"
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1515922912707-dbc512030899?fit=crop&q=80&w=800&h=450",
+    "name": "Larry",
+    "slug": "larry"
   },
   {
     "name": "Mitt",
@@ -25,8 +40,25 @@
     "video": "https://videos.pexels.com/video-files/31695123/13504136_1920_1080_30fps.mp4"
   },
   {
+    "image": "https://images.unsplash.com/photo-1679706292806-3a7d5eb2dd75?fit=crop&q=80&w=800&h=450",
+    "name": "Pastor.bot",
+    "slug": "pastor",
+    "url": "https://pastor.bot"
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1604782814592-a9063b3f9025?fit=crop&q=80&w=800&h=450",
+    "name": "Ryan",
+    "slug": "ryan"
+  },
+  {
     "color": "#dc143c",
+    "image": "https://images.unsplash.com/photo-1709467585708-464df45fad00?fit=crop&q=80&w=800&h=450",
     "name": "Samantha",
     "slug": "samantha"
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1511376979163-f804dff7ad7b?fit=crop&q=80&w=800&h=450",
+    "name": "Spencer",
+    "slug": "spencer"
   }
 ]

@@ -1,0 +1,372 @@
+{
+  "categories": [
+    {
+      "title": "Core Christian Theology",
+      "sections": [
+        {
+          "title": "God & His Nature",
+          "items": [
+            "The Trinity – One God in three persons: Father, Son, and Holy Spirit",
+            "Attributes of God – His holiness, love, power, knowledge, etc.",
+            "God's Sovereignty – His control and rule over everything",
+            "God's Immanence and Transcendence – He is close and also beyond us",
+            "Creation – God made the world on purpose"
+          ]
+        },
+        {
+          "title": "Scripture & Revelation",
+          "items": [
+            "Inspiration of Scripture – The Bible is God-breathed",
+            "Inerrancy and Infallibility – The Bible is true and trustworthy",
+            "Canon of Scripture – Why certain books are in the Bible",
+            "Illumination – The Holy Spirit helps us understand the Bible",
+            "General and Special Revelation – God shows Himself through nature and Scripture"
+          ]
+        },
+        {
+          "title": "Jesus Christ",
+          "items": [
+            "Deity of Christ – Jesus is fully God",
+            "Humanity of Christ – Jesus is fully human",
+            "Incarnation – God became human in Jesus",
+            "Virgin Birth – Jesus was born of a virgin by the Spirit",
+            "Sinless Life of Christ – Jesus never sinned",
+            "Death of Christ – He died in our place",
+            "Resurrection of Christ – He rose from the dead",
+            "Ascension of Christ – He went back to heaven",
+            "Second Coming – Jesus will come again"
+          ]
+        },
+        {
+          "title": "Holy Spirit",
+          "items": [
+            "Personhood of the Holy Spirit – He is a person, not a force",
+            "Work in Salvation – Convicts, saves, lives in believers",
+            "Sanctification – Helps us grow more like Jesus",
+            "Spiritual Gifts – Special abilities for serving others",
+            "Fruit of the Spirit – Signs of a Spirit-led life"
+          ]
+        },
+        {
+          "title": "Humanity & Sin",
+          "items": [
+            "Image of God – We are made like God",
+            "The Fall – Sin entered through Adam and Eve",
+            "Original Sin – We are born with a sinful nature",
+            "Total Depravity – Sin affects all parts of us",
+            "Human Responsibility – We are accountable to God",
+            "Biblical Anthropology – What does it mean to be human",
+            "Biblical Gender – What does it mean to be a man or woman",
+            "Biblical Marriage – What is purpose of marriage",
+            "Biblical Family – What is the purpose of family",
+            "Biblical Sexuality – What is the point and purpose of sexuality"
+          ]
+        },
+        {
+          "title": "Salvation",
+          "items": [
+            "Grace – God's free and undeserved favor",
+            "Faith – Trusting in Jesus alone",
+            "Justification – God declares us righteous",
+            "Adoption – God makes us His children",
+            "Regeneration – The new birth by the Holy Spirit",
+            "Election and Predestination – God's sovereign choice",
+            "Repentance – Turning from sin to God",
+            "Perseverance – True believers will endure",
+            "Union with Christ – We are joined to Jesus"
+          ]
+        },
+        {
+          "title": "Church",
+          "items": [
+            "Nature of the Church – God's people together",
+            "Mission of the Church – Worship, grow, serve, share",
+            "Baptism – Symbol of new life in Christ",
+            "Lord's Supper – Remembering Jesus' death",
+            "Church Leadership – Elders, pastors, deacons",
+            "Church Discipline – Loving correction"
+          ]
+        },
+        {
+          "title": "Last Things",
+          "items": [
+            "Heaven and Hell – Eternal life or separation from God",
+            "Final Judgment – Everyone will stand before God",
+            "Resurrection – Dead will rise again",
+            "New Heaven and Earth – God will renew everything",
+            "Millennium and Tribulation – Events before Jesus returns",
+            "Hope of Glory – Eternal life with God"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Core Discipleship Practices",
+      "items": [
+        "Bible Reading – Regularly engaging Scripture to know God's heart and truth",
+        "Prayer – Talking to God with honesty, dependence, and faith",
+        "Worship – Honoring God with your whole life, both privately and corporately",
+        "Confession and Repentance – Regularly turning from sin and realigning with God",
+        "Obedience to God's Word – Living out what you read and hear in Scripture",
+        "Fellowship with Believers – Committing to deep, accountable community",
+        "Gathering with the Church – Participating in weekly worship and sacraments",
+        "Baptism – Publicly identifying with Christ's death and resurrection",
+        "The Lord's Supper – Remembering and proclaiming Christ's sacrifice",
+        "Discipling Others – Helping others follow Jesus as you grow",
+        "Being Discipled – Placing yourself under the guidance of a mature believer",
+        "Evangelism – Sharing the gospel with those who don't know Christ",
+        "Serving Others – Using your time, talents, and gifts to meet needs",
+        "Generosity – Giving your money and resources joyfully and sacrificially",
+        "Sabbath and Rest – Trusting God by resting and worshiping regularly",
+        "Scripture Meditation and Memorization – Hiding God's Word in your heart",
+        "Spiritual Discernment – Testing ideas and choices by God's Word and Spirit",
+        "Submission to Spiritual Authority – Respecting and learning from leaders",
+        "Pursuit of Holiness – Actively putting off sin and pursuing righteousness",
+        "Perseverance in Trials – Trusting God through suffering and hardship"
+      ]
+    },
+    {
+      "title": "Core Christian Virtues",
+      "sections": [
+        {
+          "title": "Virtues of the Heart (Inner Disposition)",
+          "items": [
+            "Humility – Thinking of others before yourself",
+            "Gratitude – A continual posture of thanksgiving",
+            "Peacefulness – An inner calm rooted in God's sovereignty",
+            "Contentment – Trusting God's provision and rejection of materialism and consumerism"
+          ]
+        },
+        {
+          "title": "Virtues of Worship and Devotion (Toward God)",
+          "items": [
+            "Faith – Trusting in God's character and promises",
+            "Hope – Confident expectation in God's future",
+            "Love for God – Wholehearted devotion and worship",
+            "Reverence (Fear of the Lord) – Holy awe and submission"
+          ]
+        },
+        {
+          "title": "Relational Virtues (Toward Others)",
+          "items": [
+            "Kindness – Choosing gentleness and compassion",
+            "Forgiveness – Letting go of offense",
+            "Patience – Bearing with others without irritation",
+            "Peacemaking – Actively seeking reconciliation",
+            "Service – Working sacrificially for the good of others",
+            "Honesty – Telling and living the truth"
+          ]
+        },
+        {
+          "title": "Strength & Endurance Virtues (Persevering Under Trial)",
+          "items": [
+            "Perseverance – Staying faithful under pressure and persecution",
+            "Courage – Standing firm in faith",
+            "Self-Control – Mastering desires and emotions",
+            "Diligence – Persistent and faithful work"
+          ]
+        },
+        {
+          "title": "Virtues of Wisdom and Discernment (Right Thinking)",
+          "items": [
+            "Discernment – Distinguishing truth from error",
+            "Teachability – Willingness to learn and grow",
+            "Wisdom – Living skillfully and righteously",
+            "Integrity – Wholeness of character"
+          ]
+        },
+        {
+          "title": "Missional & Servant Virtues (Lived Action)",
+          "items": [
+            "Generosity – Open-handed giving",
+            "Hospitality – Welcoming others",
+            "Justice – Standing for what is right",
+            "Compassion – Care for the poor and hurting",
+            "Evangelistic Boldness – Sharing Christ clearly and courageously"
+          ]
+        },
+        {
+          "title": "Core Identity Traits",
+          "items": [
+            "Christlikeness – Living a life modeled after the character of Jesus",
+            "Godliness – Living in a way that reflects reverence and devotion to God",
+            "Dependence on God – Trusting God's power, not your own",
+            "Holy Ambition – Pursuing God's glory above all else",
+            "Resilience – Recovering from hardship with spiritual strength"
+          ]
+        },
+        {
+          "title": "Relational Character",
+          "items": [
+            "Loyalty – Faithful commitment to people and promises",
+            "Empathy – Entering into others' joys and sorrows with them",
+            "Teachability – Willingness to be corrected and to grow",
+            "Accountability – Living openly before others with honesty",
+            "Graciousness – Responding to faults of others with undeserved kindness",
+            "Merciful – Cares for the needs of those who are hurting and in need",
+            "Compassionate – Hurts with those who hurt"
+          ]
+        },
+        {
+          "title": "Leadership & Responsibility",
+          "items": [
+            "Servant-heartedness – Using power or influence to bless others",
+            "Diligence – Faithfully and persistently doing your work well",
+            "Stewardship – Managing time, talent, and treasure for God's purposes",
+            "Wisdom – Applying truth in a timely, loving, and godly way",
+            "Courage – Staying faithful when leadership is costly"
+          ]
+        },
+        {
+          "title": "Inner Life",
+          "items": [
+            "Perseverance – Remaining faithful through trials and delays",
+            "Consistency – Living out your faith with stability over time",
+            "Faithfulness – Keeping your word and showing up",
+            "Sobriety – Maintaining clarity, maturity, and seriousness about life",
+            "Discernment – Recognizing truth from error, good from evil",
+            "Purity – Passion to root out and reject even hints of sin",
+            "Holy – Love for what is holy and hatred for what is wicked",
+            "Submission – Desire to obey God",
+            "Reverent – There is a deep respect for all things about God",
+            "Gentle – A disposition away from being harsh",
+            "Meek – Restraint of ones strength",
+            "Zealous – Lives with passion and conviction",
+            "Contentment – Being satisfied in God regardless of circumstances",
+            "Joyfulness – Choosing delight in the Lord even amid sorrow",
+            "Sober – Thinking clearly and biblically in all things"
+          ]
+        },
+        {
+          "title": "Missional & Outward Living",
+          "items": [
+            "Evangelistic Boldness – Willing to share Jesus openly",
+            "Cultural Discernment – Engaging wisely without compromise",
+            "Justice-Mindedness – Seeking to right wrongs in society and relationships",
+            "Reconciliation-Seeking – Pursuing unity across divisions"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Top Discipleship Topics to Push Back on Secular Culture",
+      "sections": [
+        {
+          "title": "Cultural Discipleship",
+          "items": [
+            "Biblical authority over personal – Trusting God's Word over personal feelings or cultural opinions",
+            "Sexual integrity in a culture of expression – Living according to God's design for sex, marriage, and purity",
+            "Identity in Christ vs. self-defined identity – Rooting our identity in who God says we are, not how we feel or what culture says",
+            "Holiness vs. cultural tolerance – Living set apart for God rather than blending into the world",
+            "Convictional kindness (truth and love together) – Holding to truth with a loving, gracious posture",
+            "Sacrificial community vs. consumer individualism – Committing to the church family, not just attending for personal benefit",
+            "Humility vs. self-promotion – Serving others instead of seeking to elevate ourselves",
+            "Generosity in a greedy culture – Using our money and possessions to bless others and honor God",
+            "The sacredness of life – Valuing all human life as made in God's image, from womb to grave",
+            "True justice vs. ideological activism – Pursuing justice God's way—not just following political or cultural trends",
+            "Forgiveness over bitterness – Letting go of offenses and extending grace to others",
+            "Sabbath and rest in a hustle culture – Trusting God enough to rest and honor rhythms of work and worship",
+            "Resilient faith under pressure – Following Jesus even when it's unpopular or costly",
+            "Biblical literacy vs. soundbite theology – Knowing the Bible deeply, not just quoting verses out of context",
+            "Spiritual discernment in a world of noise – Learning to recognize what is true and what is deceptive",
+            "Witness and evangelism in a hostile world – Boldly and wisely sharing the gospel with others",
+            "Discipleship as daily surrender, not just Sunday attendance – Following Jesus in every area of life, not just going to church",
+            "Biblical masculinity and femininity – Embracing God's good design for men and women",
+            "Hope and eternity vs. present comfort – Living for eternal reward, not just temporary ease",
+            "Prayer and dependence in a self-sufficient world – Relying on God daily instead of trusting in ourselves",
+            "Faithfulness in Suffering – Trusting God and remaining loyal to Him even in hardship, loss, or unanswered prayers",
+            "Obedience vs. Moral Relativism – Following God's commands even when the world says truth is flexible or optional",
+            "Spiritual Warfare Awareness – Recognizing we have a real enemy and learning to stand firm through prayer and truth",
+            "Self-Control in an Impulsive Age – Practicing discipline over desires, screens, habits, and appetites",
+            "Gratitude vs. Entitlement – Cultivating thankfulness instead of demanding what we think we deserve",
+            "Honoring God with Our Bodies – Living out worship through how we eat, rest, exercise, dress, and express ourselves physically",
+            "Stewarding Time in a Distracted World – Using time wisely for kingdom purposes instead of wasting it on endless entertainment",
+            "Honesty and Integrity – Speaking the truth, keeping promises, and living consistently in public and private",
+            "Living by the Spirit vs. Living by the Flesh – Letting the Holy Spirit guide decisions, emotions, and habits rather than sinful desires",
+            "Engaging Culture Without Compromise – Learning how to participate in society while maintaining gospel distinctiveness"
+          ]
+        },
+        {
+          "title": "Critical Experiences for Spiritual Maturity",
+          "items": [
+            "A Clear Encounter with the Gospel – A moment of clarity and conviction about Jesus' saving work—often marking true conversion or spiritual awakening",
+            "Repentance from a Personal Stronghold – A deep break from a sinful habit, idol, or false identity that leads to freedom and transformation",
+            "Answering God's Call to Risky Obedience – Following God in a situation that requires courage, sacrifice, or surrender—like forgiving someone deeply, changing careers, or moving in obedience",
+            "Profound Experience of God's Grace or Presence – A moment (or season) of deep spiritual intimacy—often during prayer, worship, or suffering—that changes how you see God",
+            "Walking Through Suffering or Loss with God – Trusting God through pain, grief, disappointment, or unfulfilled expectations—maturity deepens in the valley",
+            "Being Deeply Known in Christian Community – Letting others see your real life—sins, struggles, hopes—and receiving love, correction, and encouragement",
+            "Serving in a Way that Costs Something – Sacrificial ministry, leadership, or generosity that stretches your faith and breaks self-reliance",
+            "Sharing the Gospel and Seeing God Work – Witnessing the power of God in someone else's life through your obedience—boosting both faith and purpose",
+            "Receiving Correction or Discipline from Others – Humbly accepting truth from spiritual leaders or friends and growing as a result",
+            "Wrestling with Doubt and Finding God Faithful – A season of questions, theological tension, or disappointment—ending with deeper conviction and trust",
+            "Stepping into Leadership or Spiritual Responsibility – Being entrusted with influence or care for others, which drives dependence on Christ and intentional growth",
+            "Participating in a Cross-Cultural or Missional Context – Seeing God's work beyond your comfort zone—broadening your view of the gospel and the Church",
+            "Letting Go of Control – Releasing something you love (a dream, a relationship, a reputation) in surrender to God's will",
+            "Learning to Hear God's Voice – Distinguishing God's leading through Scripture, prayer, wise counsel, and the Spirit's nudging",
+            "Witnessing God's Faithfulness Over Time – Looking back over years and recognizing God's provision, sanctification, and sovereignty in your story"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sins",
+      "sections": [
+        {
+          "title": "Core Categories Of Sins",
+          "items": [
+            "Sins of the heart",
+            "Sins of the tongue",
+            "Sins of omission",
+            "Sins against others",
+            "Sins against God"
+          ]
+        },
+        {
+          "title": "Sins To Confront and Overcome",
+          "items": [
+            "Pride – Self-exaltation, arrogance, or being unteachable",
+            "Greed – Loving money or possessions more than God or people",
+            "Lust – Craving sexual experiences outside God's design",
+            "Envy – Resenting what others have or rejoicing when they fail",
+            "Anger – Unrighteous outbursts, bitterness, or unforgiveness",
+            "Gluttony – Overindulgence or lack of self-control",
+            "Laziness – Avoiding responsibility, discipline, or diligence",
+            "Gossip – Spreading damaging or unnecessary information",
+            "Slander – Tearing others down, especially behind their back",
+            "Hypocrisy – Pretending to be more spiritual than you are",
+            "Dishonesty – Lying, deceiving, or misrepresenting the truth",
+            "Self-Righteousness – Thinking you're better than others spiritually",
+            "Idolatry – Loving anything more than God—success, family, image",
+            "Materialism – Finding security or identity in wealth and stuff",
+            "Fear of Man – Living to please people instead of God",
+            "Unforgiveness – Holding onto past offenses or bitterness",
+            "Sexual Immorality – All sexual activity outside of biblical marriage",
+            "Divisiveness – Causing strife in relationships or the church",
+            "Arrogance in Knowledge – Using theology to look smart, not love well",
+            "Neglect of the Poor – Ignoring the vulnerable and oppressed",
+            "Ingratitude – Complaining or failing to acknowledge God's goodness",
+            "Rebellion – Resisting spiritual authority or God's commands",
+            "Addictions – Being mastered by substances, screens, or habits",
+            "Covetousness – Always wanting more or what others have",
+            "Manipulation – Using people or controlling outcomes through deceit",
+            "Neglecting Prayer and the Word – Drifting from communion with God",
+            "Worldliness – Adopting the values, entertainment, or mindset of the world",
+            "Spiritual Apathy – Going through the motions without love or zeal",
+            "Judgmentalism – Condemning others without humility or compassion",
+            "Disobedience to the Spirit – Ignoring God's personal convictions or leadings",
+            "Complacency – Being spiritually stagnant, content without growth",
+            "Neglecting Fellowship – Isolating from the body of Christ",
+            "Withholding Generosity – Clinging to resources instead of giving freely",
+            "Neglecting Sabbath Rest – Constant busyness without honoring rest",
+            "Cynicism – Chronic skepticism that erodes faith and joy",
+            "Harboring Shame – Living in condemnation instead of God's grace",
+            "Impatience – Refusing to wait on God or others in love",
+            "Flattery – Manipulative praise to gain favor or influence",
+            "Disrespecting Parents – Dishonoring or ignoring God-given authority",
+            "Boasting – Drawing attention to yourself instead of glorifying God"
+          ]
+        }
+      ]
+    }
+  ]
+}

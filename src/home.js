@@ -30,6 +30,8 @@ fetch('projects.json')
   .then(projects => {
     const grid = document.getElementById('projects-grid')
     projects.forEach(project => {
+      const href = project.url || `/${project.slug}`
+      const target = project.url ? 'target="_blank"' : ''
       const media = project.image
         ? `<img src="${project.image}" alt="${project.name}" />`
         : project.video
@@ -37,7 +39,7 @@ fetch('projects.json')
           : ''
       const style = project.color ? `style="background: ${project.color}"` : ''
       grid.innerHTML += `
-        <a class="ghost project-card ${project.slug}" href="/${project.slug}" ${style}>
+        <a class="ghost project-card ${project.slug}" href="${href}" ${style} ${target}>
           ${media}
           <h3>${project.name}</h3>
         </a>

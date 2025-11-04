@@ -1,0 +1,321 @@
+{
+  "sessions": [
+    {
+      "title": "Differentiation Statement",
+      "modules": [
+        {
+          "title": "Introduction",
+          "groups": [
+            {
+              "title": "Welcome to Your Systemized Selling Playbook",
+              "description": "This playbook is designed to pull you out of your “industry box” and “company box,” forcing you to view your business through the lens of a Brand Marketer and Sales Strategist. Working IN your playbook is your time to step back and work ON the strategic growth of your business."
+            },
+            {
+              "title": "How to Use This Playbook",
+              "description": "Dedicate at least one hour per week to working in your playbook. Its purpose is not to provide all the answers but to guide you in asking the right questions and focusing on your business like a marketing and sales strategist."
+            },
+            {
+              "title": "6-Session Program Overview",
+              "checkboxes": [
+                "Session 1: Differentiation Statement",
+                "Module 1: Your Foundation",
+                "Module 2: Target Audience",
+                "Module 3: Competitive Landscape",
+                "Module 4: Differentiation",
+                "Team Meeting 1 Completed",
+                "Session 2: Branding Strategy",
+                "Module 5: Service Offering",
+                "Module 6: Pricing Strategy",
+                "Module 7: Branding Strategy",
+                "Team Meeting 2 Completed",
+                "Session 3: Engagement Strategy - Lead Magnet & Initial Outreach",
+                "Module 8: Engagement Strategy",
+                "Steps 1, 2, & 3",
+                "Team Meeting 3 Completed",
+                "Session 4: Engagement Strategy - Conversion Funnel Strategy",
+                "Module 8: Engagement Strategy",
+                "Step 4",
+                "Team Meeting 4 Completed",
+                "Session 5: Sales Process - Pre-Qual, Uncover Pain, & Collaborate",
+                "Module 9: Sales Process",
+                "Practices 1, 2, & 3",
+                "Team Meeting 5 Completed",
+                "Session 6: Sales Process - Storytelling, Proposal, Close, & Follow-up",
+                "Module 9: Sales Process",
+                "Practices 4, 5, 6, & 7",
+                "Team Meeting 6 Completed"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Your Foundation",
+          "groups": [
+            {
+              "title": "Brands Are a Direct Reflection of Their Founder",
+              "description": "While you may offer similar services to your top competitors, your (1) core expertise, (2) passion for what you do, and (3) your “Why”—why you’re in business and why people should choose you—are as unique as your fingerprint. As a result, the foundation of your differentiation and brand will be built around the very best of you."
+            },
+            {
+              "title": "Prepare for Your Kick Off Session",
+              "description": "Before your kick-off session, take a moment to complete the three prompts below. During the session, you’ll share your Core Expertise, Passion, and Why with your mastermind team as part of your introduction.",
+              "questions": [
+                "Define your core expertise.",
+                "Describe your PASSION for what you do.",
+                "Describe your WHY for being in business."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Target Audience",
+          "groups": [
+            {
+              "title": "Niching Strategy",
+              "description": "Lead generation and sales success start with understanding your audience. Our Niching Strategy is designed to help you craft the right message for the right audience. This begins by clearly defining your audience and gaining a deep understanding of their pain points and needs."
+            },
+            {
+              "title": "Primary Target Audience",
+              "checkboxes": [
+                "Your VERY BEST client.",
+                "Someone you just click with.",
+                "They clearly value you and your product or service.",
+                "They benefit most from the value you provide.",
+                "They are the most profitable client for your business."
+              ],
+              "questions": ["Describe your Primary Audience.", "Primary Audience’s Pain Points."]
+            },
+            {
+              "title": "Secondary Target Audience",
+              "description": "This audience is highly valuable, though secondary to your Primary Audience.",
+              "questions": ["Describe your Secondary Audience.", "Secondary Audience’s Pain Points."]
+            },
+            {
+              "title": "Tertiary Target Audience",
+              "questions": ["Describe your Tertiary Audience.", "Tertiary Audience’s Pain Points."]
+            },
+            {
+              "title": "Disqualified Audiences(s)",
+              "questions": ["Describe audience(s) that you will not work with and describe why."]
+            },
+            {
+              "title": "Additional Target Audience Information",
+              "questions": [
+                "Define Demographics, Geographics, Psychographics, Industry(s), etc.",
+                "Audience research: market size, needs, behaviors, etc."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Competitive Landscape",
+          "groups": [
+            {
+              "title": "How Are You Different",
+              "description": "The key to this module lies in the final prompt: how effectively you identify opportunities to differentiate your services. Differentiation doesn’t require saying something entirely unique; it’s about emphasizing what you are known for. Consider Volvo: while nearly all car brands promote safety, Volvo is distinctly recognized as the “safety car.”",
+              "questions": [
+                "Analyze your competitors - document their strengths, weaknesses, positioning, etc.",
+                "Document competitive services.",
+                "Document competitors pricing.",
+                "Identify opportunities to differentiate your offering."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Differentiation",
+          "groups": [
+            {
+              "title": "Create Your Differentiation Statement",
+              "questions": [
+                "What’s missing in your industry? (Hint: Your answer should connect to your “Why”—the driving purpose behind starting your business.)",
+                "Tie in how your experience and passion can fill in the industry gaps.",
+                "Create your Differentiation Statement. (One sentence that defines your differentiation.)"
+              ]
+            },
+            {
+              "title": "Reduce Your Statement to 5 Words",
+              "questions": [
+                "Word or Phrase 1",
+                "Word or Phrase 2",
+                "Word or Phrase 3",
+                "Word or Phrase 4",
+                "Word or Phrase 5",
+                "Give your service a name."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Branding Strategy",
+      "modules": [
+        {
+          "title": "Service Offering",
+          "groups": [
+            {
+              "title": "Concisely Define Your Service",
+              "questions": [
+                "Define your service as clearly as possible and in as much detail as possible.",
+                "Describe the benefits your clients will enjoy from your service.",
+                "Define ways that you can offer a recurring revenue model."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Pricing Strategy",
+          "groups": [
+            {
+              "title": "Price Plays a Role in Every Purchasing Decision",
+              "questions": [
+                "Define fixed and variable costs involved with producing your service.",
+                "Identify your pricing model (hourly, program-specific, etc.).",
+                "Define how your pricing compares to the competitive options available."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Branding Strategy",
+          "groups": [
+            {
+              "title": "Positioning You in Your Prospects Subconscious Mind",
+              "questions": [
+                "Point #1: Identify your first word, idea, or phase to promote your differentiation.",
+                "How does this topic promote your differentiation and educate your audience?",
+                "Point #2: Identify your second word, idea, or phase to promote your differentiation.",
+                "How does this topic promote your differentiation and educate your audience?",
+                "Point #3: Identify your third word, idea, or phase to promote your differentiation.",
+                "How does this topic promote your differentiation and educate your audience?",
+                "Point #4: Identify your fourth word, idea, or phase to promote your differentiation.",
+                "How does this topic promote your differentiation and educate your audience?",
+                "Point #5: Identify your fifth word, idea, or phase to promote your differentiation.",
+                "How does this topic promote your differentiation and educate your audience?"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Engagement Strategy - Lead Magnet & Initial Outreach",
+      "modules": [
+        {
+          "title": "Engagement Strategy 1",
+          "groups": [
+            {
+              "title": "Step 1 Lead Magnet",
+              "questions": ["Define your Lead Magnet or Lead Magnet Options"]
+            },
+            {
+              "title": "Step 2 Initial Hmm Message",
+              "questions": [
+                "Define Audience by Titles",
+                "Define Pains or Needs",
+                "Define Differentiators",
+                "Write your Initial ’Hmm’ Message-A for testing",
+                "Write your Initial ’Hmm’ Message-B for testing",
+                "Write your Initial ’Hmm’ Message-C for testing",
+                "Write your Initial ’Hmm’ Message-D for testing"
+              ]
+            },
+            {
+              "title": "Step 3 Conversation Strategy",
+              "questions": [
+                "Define the particulars of your lead magnet.",
+                "Add an urgency.",
+                "Write your Conversation Strategy Template Message."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Engagement Strategy - Conversion Funnel Strategy",
+      "modules": [
+        {
+          "title": "Engagement Strategy 2",
+          "groups": [
+            {
+              "title": "Step 4 Conversion Funnel",
+              "questions": ["List events that you can offer.", "Next Free Offer", "Initial Paid Offer", "The Big Sale"]
+            },
+            {
+              "title": "Lead Magnet to Conversion Funnel Transition",
+              "questions": [
+                "Describe how you will introduce your Conversion Funnel from your Lead Magnet.",
+                "Document your Lead Magnet follow up plan."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sales Process - Pre-Qual, Uncover Pain, & Collaborate",
+      "modules": [
+        {
+          "title": "Sales Process 1",
+          "groups": [
+            {
+              "title": "Practice 1: Pre Qualification",
+              "questions": [
+                "List questions to identify your Primary, Secondary, or Tertiary Audience as defined in Module 2."
+              ]
+            },
+            {
+              "title": "Practice 2: Uncover Pain",
+              "questions": ["Define Pain Point # 1", "Define Pain Point # 2", "Define Pain Point # 3"]
+            },
+            {
+              "title": "Practice 3: Collaboration",
+              "questions": [
+                "Define multiple service options to present to your prospects.",
+                "Define the upside and downside of service option 1",
+                "Define the upside and downside of service option 2",
+                "Define the upside and downside of service option 3",
+                "Define the ballpark range for service option 1",
+                "Define the ballpark range for service option 2",
+                "Define the ballpark range for service option 3"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sales Process - Storytelling, Proposal, Close, & Follow-up",
+      "modules": [
+        {
+          "title": "Sales Process 2",
+          "groups": [
+            {
+              "title": "Practice 4: Tell Your Story",
+              "questions": [
+                "How you got here",
+                "Why you got here",
+                "Identify the Pain",
+                "Personalize the Solution",
+                "Define Your Differentiation"
+              ]
+            },
+            {
+              "title": "Practice 5: Present Your Proposal",
+              "questions": []
+            },
+            {
+              "title": "Practice 6: Ask for the Business",
+              "questions": []
+            },
+            {
+              "title": "Practice 7: Follow up Plan",
+              "questions": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -59,3 +59,49 @@ const transcribe = async audioBlob => {
   const result = await response.json()
   return result.text
 }
+
+const loadMarkdown = slug => {
+  const markdownContent = document.getElementById('markdown-content')
+  if (!markdownContent) return
+
+  fetch('README.md')
+    .then(response => response.text())
+    .then(markdown => {
+      markdownContent.innerHTML = marked.parse(markdown)
+    })
+}
+
+const setupSegmentedControl = () => {
+  const segments = document.querySelectorAll('.segment')
+  if (!segments.length) return
+
+  const page = window.location.pathname.split('/').filter(Boolean).pop()
+  const slug = page?.replace('.html', '') || 'index'
+
+  loadMarkdown(slug)
+
+  segments.forEach(segment => {
+    segment.addEventListener('click', () => {
+      const view = segment.dataset.view
+      const demoSections = document.querySelectorAll('.demo')
+      const aboutSection = document.getElementById('about')
+
+      segments.forEach(s => s.classList.remove('active'))
+      segment.classList.add('active')
+
+      if (view === 'demo') {
+        demoSections.forEach(section => section.classList.remove('hidden'))
+        aboutSection.classList.add('hidden')
+      } else {
+        demoSections.forEach(section => section.classList.add('hidden'))
+        aboutSection.classList.remove('hidden')
+      }
+    })
+  })
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', setupSegmentedControl)
+} else {
+  setupSegmentedControl()
+}

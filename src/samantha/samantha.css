@@ -1,9 +1,9 @@
-/* Markdown */
-#markdown .layer-inset {
+/* About */
+#about .layer-inset {
   max-width: 48rem;
 }
 
-#markdown h1 {
+#about h1 {
   color: var(--color-darkest);
   font-size: 2rem;
   font-weight: 700;
@@ -11,14 +11,14 @@
   margin: 0 0 1rem;
 }
 
-#markdown p {
+#about p {
   color: var(--color-darker);
   line-height: 1.6;
   margin: 0;
 }
 
-/* OS */
-#os .layer-inset {
+/* Demo */
+.demo .layer-inset {
   align-items: center;
   background: linear-gradient(to bottom, #fffbf0, #fdebd0);
   border-radius: 1rem;

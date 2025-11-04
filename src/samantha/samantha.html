@@ -1,10 +1,13 @@
-<section class="layer" id="markdown">
+<section class="layer">
   <div class="layer-inset">
-    <div id="markdown-content"></div>
+    <div class="segmented-control">
+      <button class="segment active" data-view="demo">Demo</button>
+      <button class="segment" data-view="about">About</button>
+    </div>
   </div>
 </section>
 
-<section class="ghost layer" id="os">
+<section class="demo ghost layer">
   <div class="layer-inset">
     <div id="desktop">
       <div class="os-logo">OS¹</div>
@@ -19,6 +22,12 @@
         <div id="progress-bar"></div>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="layer hidden" id="about">
+  <div class="layer-inset">
+    <div id="markdown-content"></div>
   </div>
 </section>
 

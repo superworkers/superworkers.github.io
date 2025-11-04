@@ -46,3 +46,36 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+.segmented-control {
+  background: var(--color-lighter);
+  border-radius: 6px;
+  display: flex;
+  gap: 0;
+  padding: 0.25rem;
+}
+
+.segment {
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  color: var(--color-half);
+  cursor: pointer;
+  flex: 1;
+  font: inherit;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s;
+}
+
+.segment.active {
+  background: var(--color-lightest);
+  color: var(--color-darkest);
+}
+
+.hidden {
+  display: none;
+}
+
+#about .layer-inset {
+  align-items: stretch;
+}
