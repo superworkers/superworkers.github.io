@@ -1,0 +1,21 @@
+<h1>Spencer Admin</h1>
+
+<div class="tabs">
+  <button class="tab active" onclick="showTab('candidates')">Candidates</button>
+  <button class="tab" onclick="showTab('questions')">Questions</button>
+  <button class="danger" onclick="resetAdmin()">Reset</button>
+</div>
+
+<div id="candidates">
+  <div id="candidateList"></div>
+  <div class="hidden" id="candidateDetail">
+    <button onclick="backToList()">← Back to List</button>
+    <div id="detailContent"></div>
+  </div>
+</div>
+
+<div class="hidden" id="questions">
+  <div id="questionList"></div>
+  <button onclick="addQuestion()">+ Add Question</button>
+  <button onclick="saveQuestions()">Save Questions</button>
+</div>

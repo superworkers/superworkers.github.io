@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  padding: 2rem;
+}
+
+button {
+  background: #007aff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+}
+
+button:hover {
+  background: #0051d5;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+input {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  padding: 0.75rem;
+  width: 100%;
+}
+
+ol {
+  padding-left: 1.5rem;
+}
+
+ol li {
+  margin-bottom: 0.5rem;
+}
+
+p {
+  color: #666;
+  margin: 0;
+}
+
+pre {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+  white-space: pre-wrap;
+}
+
+strong {
+  color: #000;
+}
+
+.candidate-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+}
+
+.candidate-card:hover {
+  background: #e9ecef;
+}
+
+.detail-section {
+  margin-bottom: 2rem;
+}
+
+.highlighted {
+  background: #fff3cd;
+  font-weight: bold;
+  padding: 0.25rem;
+}
+
+.question-item {
+  align-items: center;
+  background: #f8f9fa;
+  border-radius: 8px;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+}
+
+.question-item input {
+  flex: 1;
+}
+
+.tab {
+  background: none;
+  border: none;
+  border-radius: 0;
+  color: #666;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.tab.active {
+  border-bottom: 2px solid #007aff;
+  color: #007aff;
+  font-weight: bold;
+  margin-bottom: -2px;
+}
+
+.tabs {
+  border-bottom: 2px solid #e0e0e0;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.danger {
+  background: transparent;
+  border: 1px solid var(--color-light);
+  border-radius: 999px;
+  color: var(--color-darkest);
+  margin-left: auto;
+  padding: 0.5rem 1rem;
+}
+
+.danger:hover {
+  background: var(--color-light);
+}
+
+.hidden {
+  display: none;
+}
+
+.transcript-entries {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.transcript-line {
+  color: var(--color-darkest);
+  margin-bottom: 0.5rem;
+}
+
+.transcript-line.assistant {
+  color: var(--color-half);
+}

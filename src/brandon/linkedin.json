@@ -1,0 +1,59 @@
+{
+  "profile": {
+    "about": "Professional summary that expands on skills, experience, and career goals",
+    "background_photo": "Background banner image URL",
+    "contact_email": "Professional email address",
+    "contact_phone": "Phone number",
+    "headline": "Professional headline showing current role, expertise, and value proposition",
+    "location": "City, State/Country",
+    "name": "First Last",
+    "profile_photo": "Profile photo URL"
+  },
+  "education": [
+    {
+      "degree": "Degree type and field of study",
+      "end_date": "Graduation date or 'Present'",
+      "school": "School name",
+      "start_date": "Start date"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Company name",
+      "description": "Job responsibilities and accomplishments",
+      "end_date": "End date or 'Present'",
+      "location": "City, State/Country",
+      "start_date": "Start date",
+      "title": "Job title"
+    }
+  ],
+  "licenses_certifications": [
+    {
+      "issuer": "Issuing organization",
+      "name": "Certification or license name",
+      "year": "Year obtained"
+    }
+  ],
+  "projects": [
+    {
+      "description": "Project details and outcomes",
+      "name": "Project name",
+      "year": "Year completed"
+    }
+  ],
+  "recommendations": [
+    {
+      "name": "Recommender name",
+      "relationship": "Professional relationship",
+      "text": "Recommendation text"
+    }
+  ],
+  "skills": ["Skill 1", "Skill 2", "Skill 3"],
+  "volunteer": [
+    {
+      "cause": "Cause or focus area",
+      "organization": "Organization name",
+      "role": "Volunteer role"
+    }
+  ]
+}
