@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@700&display=swap');
+
+.app-header {
+  align-items: baseline;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.darrin {
+  font-family: 'BioRhyme', serif;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+}
+
+.subtitle {
+  color: var(--color-half);
+  font-size: 1rem;
+}
+
 /* History */
 #history {
   align-items: stretch;
@@ -37,9 +59,8 @@
 
 .history-preview {
   flex: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  line-height: 1.4;
+  overflow-wrap: break-word;
 }
 
 .history-stats {

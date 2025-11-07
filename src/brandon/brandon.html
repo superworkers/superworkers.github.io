@@ -9,7 +9,71 @@
 
 <section class="demo layer">
   <div class="layer-inset">
-    <h1>Brandon</h1>
+    <div class="app-header">
+      <div class="brandon">Brandon</div>
+      <nav class="view-nav">
+        <button class="view-tab active" data-view="import">Import</button>
+        <button class="view-tab" data-view="record">Record</button>
+        <button class="view-tab" data-view="generate">Generate</button>
+        <button class="view-tab" data-view="improve">Improve</button>
+      </nav>
+    </div>
+  </div>
+</section>
+
+<section class="demo layer" id="import-view">
+  <div class="layer-inset">
+    <div class="import-input">
+      <label>LinkedIn Profile URL</label>
+      <div class="url-input">
+        <span class="url-prefix">https://linkedin.com/in/</span>
+        <input id="linkedin-url" placeholder="username" type="text" />
+      </div>
+      <button class="button button-primary" id="import-btn">
+        <i class="fa fa-lock"></i> Import Profile <span class="pro-badge">PRO</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="demo layer hidden" id="record-view">
+  <div class="layer-inset">
+    <textarea
+      id="context"
+      placeholder="Add context about your professional background, accomplishments, goals, and experiences..."
+    ></textarea>
+    <div class="button-group">
+      <button class="button" id="record-btn">
+        <i class="fa fa-lock"></i> Record <span class="pro-badge">PRO</span>
+      </button>
+      <button class="button button-primary" id="interview-btn">
+        <i class="fa fa-lock"></i> Start Interview <span class="pro-badge">PRO</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="demo layer hidden" id="generate-view">
+  <div class="layer-inset">
+    <h2>Profile Data</h2>
+    <div id="profile-list"></div>
+    <p class="message" id="generate-message">Please add context in the Record view</p>
+    <button class="button button-primary" disabled id="generate-btn">Generate Profile</button>
+  </div>
+</section>
+
+<section class="demo layer hidden" id="generate-view-preview">
+  <div class="layer-inset">
+    <h2>LinkedIn Preview</h2>
+    <div id="linkedin-preview"></div>
+  </div>
+</section>
+
+<section class="demo layer hidden" id="improve-view">
+  <div class="layer-inset">
+    <p class="message" id="improve-message">Please import or generate a profile first</p>
+    <button class="button button-primary" disabled id="improve-btn">Generate Suggestions</button>
+    <div id="improvements"></div>
   </div>
 </section>
 

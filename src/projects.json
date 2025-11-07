@@ -20,6 +20,11 @@
     "slug": "dave"
   },
   {
+    "image": "https://images.unsplash.com/photo-1492571350019-22de08371fd3?fit=crop&q=80&w=800&h=450",
+    "name": "Doug-san",
+    "slug": "doug"
+  },
+  {
     "image": "https://images.unsplash.com/photo-1525104171570-308e54169ae1?fit=crop&q=80&w=800&h=450",
     "name": "Jeremy",
     "slug": "jeremy"
@@ -28,6 +33,11 @@
     "image": "https://images.unsplash.com/photo-1760529700793-2f1ca0e96eab?fit=crop&q=80&w=800&h=450",
     "name": "Jory",
     "slug": "jory"
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?fit=crop&q=80&w=800&h=450",
+    "name": "Kuda",
+    "slug": "kuda"
   },
   {
     "image": "https://images.unsplash.com/photo-1515922912707-dbc512030899?fit=crop&q=80&w=800&h=450",
@@ -40,7 +50,7 @@
     "video": "https://videos.pexels.com/video-files/31695123/13504136_1920_1080_30fps.mp4"
   },
   {
-    "image": "https://images.unsplash.com/photo-1679706292806-3a7d5eb2dd75?fit=crop&q=80&w=800&h=450",
+    "image": "https://images.unsplash.com/photo-1550859492-d5da9d8e45f3?fit=crop&q=80&w=800&h=450",
     "name": "Pastor.bot",
     "slug": "pastor",
     "url": "https://pastor.bot"

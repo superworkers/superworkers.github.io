@@ -7,14 +7,60 @@
   </div>
 </section>
 
-<section class="demo layer">
+<section class="demo layer" id="jobs">
   <div class="layer-inset">
-    <h1>Spencer</h1>
+    <div class="app-header">
+      <div class="spencer">Spencer</div>
+    </div>
+    <h1>Open Positions</h1>
+    <div id="jobList"></div>
   </div>
 </section>
 
 <section class="layer hidden" id="about">
   <div class="layer-inset">
     <div id="markdown-content"></div>
+  </div>
+</section>
+
+<section class="hidden layer" id="application">
+  <div class="layer-inset">
+    <h1>Apply for <span id="jobTitle"></span></h1>
+    <form id="applicationForm">
+      <input id="name" placeholder="Full Name" required type="text" value="Alex Johnson" />
+      <input id="email" placeholder="Email" required type="email" value="alex.johnson@example.com" />
+      <input id="linkedin" placeholder="LinkedIn Profile URL" type="url" value="https://linkedin.com/in/alexjohnson" />
+      <input accept=".pdf,.doc,.docx" id="resume" type="file" />
+      <button type="submit">Start Interview</button>
+    </form>
+  </div>
+</section>
+
+<section class="hidden" id="interview">
+  <div id="videoContainer">
+    <div id="sidebar">
+      <div id="aiAvatar"></div>
+      <video autoplay id="userVideo" muted playsinline></video>
+      <div id="liveTranscript">
+        <button id="inviteButton" type="button">&#128274; Invite digital clone</button>
+      </div>
+    </div>
+    <div id="main">
+      <div id="mainCopy">Listening...</div>
+      <div aria-live="polite" id="captionOverlay"></div>
+    </div>
+  </div>
+  <div id="status">
+    <div id="timer">10:00</div>
+    <button id="endButton" onclick="endInterview()">End Interview</button>
+  </div>
+</section>
+
+<section class="hidden layer" id="complete">
+  <div class="layer-inset">
+    <h1>Interview Complete</h1>
+    <p>Thank you for your time. We'll review your interview and be in touch soon.</p>
+    <div id="transcript"></div>
+    <div id="followup"></div>
   </div>
 </section>

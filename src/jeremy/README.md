@@ -1,14 +1,23 @@
 # Jeremy
 
+Sermon compliance audit. Analyzes sermon transcripts against theological checklist across 5 major categories.
+
 ## Travelogue
 
-Upload transcripts of sermons he's done, then apply a compliance checklist which he's already drafted.
-
-## Ideas
-
-- Map out checklist similar to how we did with the other structured frameworks
+Audits sermon transcripts using Jeremy’s pre-drafted compliance checklist of theological concepts and practices.
 
 ## TODO
 
 - [x] Start cloning
 - [ ] Author travelogue
+- [x] Create checklist.json framework
+- [x] Build structured outputs format
+- [x] Analyze transcripts by category
+- [x] Extract relevant excerpts
+- [x] Render checklist with present/absent indicators
+- [x] Save audit history with timestamps
+- [x] Load previous audits
+- [x] Add example sermon paste
+- [ ] Export audit reports
+- [ ] Compare sermons over time
+- [ ] Add custom checklist editing
