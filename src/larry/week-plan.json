@@ -1,0 +1,69 @@
+{
+  "friday": {
+    "blockers": ["Blocker 1"],
+    "meetings": ["9:00 AM - Standup (15m)", "2:00 PM - Sprint planning (1h)"],
+    "tasks": [
+      {
+        "assignee": "Person",
+        "description": "Specific task description",
+        "hours": 2,
+        "id": "PROJ-123",
+        "period": "morning"
+      }
+    ]
+  },
+  "key_risks": ["Risk 1", "Risk 2"],
+  "monday": {
+    "blockers": ["Blocker 1"],
+    "meetings": ["9:00 AM - Standup (15m)", "2:00 PM - Sprint planning (1h)"],
+    "tasks": [
+      {
+        "assignee": "Person",
+        "description": "Specific task description",
+        "hours": 2,
+        "id": "PROJ-123",
+        "period": "morning"
+      }
+    ]
+  },
+  "success_metrics": ["Metric 1", "Metric 2"],
+  "thursday": {
+    "blockers": ["Blocker 1"],
+    "meetings": ["9:00 AM - Standup (15m)", "2:00 PM - Sprint planning (1h)"],
+    "tasks": [
+      {
+        "assignee": "Person",
+        "description": "Specific task description",
+        "hours": 2,
+        "id": "PROJ-123",
+        "period": "morning"
+      }
+    ]
+  },
+  "tuesday": {
+    "blockers": ["Blocker 1"],
+    "meetings": ["9:00 AM - Standup (15m)", "2:00 PM - Sprint planning (1h)"],
+    "tasks": [
+      {
+        "assignee": "Person",
+        "description": "Specific task description",
+        "hours": 2,
+        "id": "PROJ-123",
+        "period": "morning"
+      }
+    ]
+  },
+  "wednesday": {
+    "blockers": ["Blocker 1"],
+    "meetings": ["9:00 AM - Standup (15m)", "2:00 PM - Sprint planning (1h)"],
+    "tasks": [
+      {
+        "assignee": "Person",
+        "description": "Specific task description",
+        "hours": 2,
+        "id": "PROJ-123",
+        "period": "morning"
+      }
+    ]
+  }
+}

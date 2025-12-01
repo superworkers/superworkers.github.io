@@ -1,8 +1,136 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Mono:wght@700&display=swap');
 
+.day-card {
+  display: contents;
+}
+
+.day-card h3 {
+  color: var(--color-darker);
+  font-family: 'PT Mono', monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.plan-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.plan-section div {
+  color: var(--color-darker);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.plan-section strong {
+  color: var(--color-half);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.footer-section {
+  color: var(--color-darker);
+  line-height: 1.4;
+}
+
+.footer-section h3 {
+  color: var(--color-half);
+  font-family: 'PT Mono', monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+}
+
 .larry {
   font-family: 'PT Mono', monospace;
   font-size: 2rem;
   font-weight: 700;
   line-height: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.meeting-item {
+  color: var(--color-dark);
+  font-size: 0.875rem;
+}
+
+#plan {
+  margin-top: 2rem;
+}
+
+.plan-footer {
+  border-top: 1px solid var(--color-light);
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+
+.task-item {
+  font-family: 'PT Mono', monospace;
+  font-size: 0.875rem;
+}
+
+textarea {
+  aspect-ratio: 16 / 9;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  resize: vertical;
+  width: 100%;
+}
+
+#plan {
+  margin: 0;
+  max-width: unset;
+}
+
+.week-grid {
+  column-gap: 1rem;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(5, minmax(15rem, 1fr));
+  grid-template-rows: auto auto auto auto auto;
+  row-gap: 1rem;
+}
+
+.history-item {
+  background: transparent;
+  border: 1px solid var(--color-light);
+  border-radius: 6px;
+  color: var(--color-half);
+  cursor: pointer;
+  font-size: 0.875rem;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  width: 100%;
+}
+
+.history-item:hover {
+  border-color: var(--color-darkest);
+  color: var(--color-darkest);
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media (max-width: 80rem) {
+  .day-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .week-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
